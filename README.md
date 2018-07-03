@@ -1,4 +1,4 @@
-# smart-training
+# my-project
 
 > A Vue.js project
 
