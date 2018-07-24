@@ -22,8 +22,9 @@
     "moment": "^2.22.2",
     "vue": "^2.5.2",
     "vue-i18n": "^8.0.0",
+    "vue-infinite-loading": "^2.3.1",
     "vue-router": "^3.0.1",
-    "vuetify": "^1.0.19",
+    "vuetify": "^1.1.6",
     "vuex": "^3.0.1",
     "vuex-persistedstate": "^2.5.4"
   },

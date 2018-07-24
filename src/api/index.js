@@ -20,5 +20,37 @@ export default {
     },
     getUserProfile (userId) {
         return http.get(`/users/${userId}`)
+    },
+    getAvaiableTrainings () {
+        return http.get('/trainings')
+    },
+    createNewTraining (training) {
+        return http.post('/trainings', training)
+    },
+    getTraining (trainingId) {
+        return http.get(`/trainings/${trainingId}`)
+    },
+    getUsersByTraining (trainingId, page, size) {
+        const query = {
+            page,
+            size
+        }
+
+        return http.post(`/trainings/${trainingId}/users/query`, query)
+    },
+    getTrainees (page, size) {
+        const query = {
+            page,
+            size,
+            roles: ['ROLE_TRAINEE']
+        }
+
+        return http.post('/users/query', query)
+    },
+    createUserAccount (account) {
+        return http.post('/users', account)
+    },
+    addAddtionalProps (userId, props) {
+        return http.post(`/users/${userId}/properties`, props)
     }
 }

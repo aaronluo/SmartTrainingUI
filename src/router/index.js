@@ -4,6 +4,8 @@ import _ from 'lodash'
 import Home from '../components/Home'
 import Login from '../components/Login'
 import Training from '../components/Training'
+import TrainingDetail from '../components/TrainingDetail'
+import Trainee from '../components/Trainee'
 import store from '../store'
 
 Vue.use(Router)
@@ -21,9 +23,19 @@ const router = new Router({
       component: Login
     },
     {
-      path: '/training',
+      path: '/trainings',
       name: 'Training',
       component: Training
+    },
+    {
+      path: '/trainings/:id',
+      name: 'TrainingDetail',
+      component: TrainingDetail
+    },
+    {
+      path: '/trainees',
+      name: 'Trainee',
+      component: Trainee
     }
   ],
   mode: 'history'
