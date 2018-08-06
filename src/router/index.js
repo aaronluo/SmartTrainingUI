@@ -6,6 +6,7 @@ import Login from '../components/Login'
 import Training from '../components/Training'
 import TrainingDetail from '../components/TrainingDetail'
 import Trainee from '../components/Trainee'
+import TraineeDetail from '../components/TraineeDetail'
 import store from '../store'
 
 Vue.use(Router)
@@ -36,6 +37,11 @@ const router = new Router({
       path: '/trainees',
       name: 'Trainee',
       component: Trainee
+    },
+    {
+      path: '/trainees/:id',
+      name: 'TraineeDetail',
+      component: TraineeDetail
     }
   ],
   mode: 'history'

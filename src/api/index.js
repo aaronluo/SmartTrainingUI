@@ -47,10 +47,27 @@ export default {
 
         return http.post('/users/query', query)
     },
+    getTrainee (id) {
+        return http.get(`/users/${id}`)
+    },
     createUserAccount (account) {
         return http.post('/users', account)
     },
     addAddtionalProps (userId, props) {
         return http.post(`/users/${userId}/properties`, props)
+    },
+    getTrainingLogs (traineeId, accountId, pagination) {
+        return http.post(`/users/${traineeId}/accounts/${accountId}/trainingLogs/query`, pagination)
+    },
+    getDepositeLogs (traineeId, accountId, pagination) {
+        return http.post(`/users/${traineeId}/accounts/${accountId}/deposite/query`, pagination)
+    },
+    addMoney (traineeId, accountId, amount, comment) {
+        const payload = {
+            amount,
+            comment
+        }
+
+        return http.post(`/users/${traineeId}/accounts/${accountId}/deposite`, payload)
     }
 }

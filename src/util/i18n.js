@@ -33,7 +33,9 @@ const messages = {
             age: 'Age',
             gender: 'Gender',
             avatar: 'Avatar',
-            required: 'It is requried field'
+            required: 'It is requried field',
+            depositeNum: 'Deposite Amount',
+            comment: 'Comment'
         },
         app: {
             title: 'Smart Training',
@@ -99,7 +101,22 @@ const messages = {
                 addProp: 'Add Addtional Property',
                 complete: 'Completed'
             },
-            createDone: 'has been created successfully!'
+            createDone: 'has been created successfully!',
+            createAccount: 'Create Training Account',
+            deposite: 'Deposite Money',
+            noneAccount: 'No Training Registered by This Trainee',
+            accountInfo: 'Account Brief',
+            account: {
+                balance: 'Balance',
+                unitPrice: 'Unit Price',
+                validDate: 'Valid Period',
+                depositeCount: 'Deposite Log',
+                trainingLogCount: 'Training Log'
+            },
+            rule: {
+                deposite: 'Deposite amount can not be negative'
+            },
+            depositeDone: 'Deposite money successfully!'
         }
     },
     cn: {
@@ -123,7 +140,9 @@ const messages = {
             age: '年龄',
             gender: '性别',
             avatar: '头像',
-            required: '必填'
+            required: '必填',
+            depositeNum: '金额',
+            comment: '备注'
         },
          app: {
              title: '智训管理系统',
@@ -189,7 +208,22 @@ const messages = {
                 addProp: '详细设置',
                 complete: '完成'
             },
-            createDone: '创建完成!'
+            createDone: '创建完成!',
+            createAccount: '报名课程',
+            deposite: '账户充值',
+            noneAccount: '该学员没有报名的课程',
+            accountInfo: '账户信息',
+            account: {
+                balance: '账户余额',
+                unitPrice: '课程单价',
+                validDate: '有效日期',
+                depositeCount: '充值记录',
+                trainingLogCount: '培训记录'
+            },
+            rule: {
+                deposite: '存入金额必须大于0'
+            },
+            depositeDone: '充值成功!'
         }
     }
 }

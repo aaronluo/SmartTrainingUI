@@ -13,7 +13,7 @@
         </v-layout>
         <v-layout row wrap style="margin-top: 10px">
             <v-flex xs6 sm4 md3 v-for="t in trainees" :key="t.id">
-                <v-card color="white" >
+                <v-card color="white" :to="`/trainees/${t.id}`">
                     <v-container fluid grid-list-xs style="padding: 8px">
                         <v-layout row>
                             <v-flex xs3>
